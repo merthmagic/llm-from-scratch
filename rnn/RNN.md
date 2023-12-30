@@ -23,17 +23,21 @@ https://www.analyticsvidhya.com/blog/2017/12/introduction-to-recurrent-neural-ne
 从MLP出发，推导出了RNN
 
 从结构推导一下公式
+
 $$
 h(t) = f(h_{t-1},x_t)
 $$
+
 $h_{t-1}$ 是前一个状态，$x_t$是当前输入，$h_t$是当前的新状态
 
 用$\tanh$ 作为激活函数，循环神经元的权重是$W_{hh}$, 输入神经元的的权重$W_{xh}$  , 时刻$t$的状态为:
+
 $$
 h_t = \tanh(W_{hh}h_{t-1}+W_{xh}x_t)
 $$
 
 用于计算输出的为
+
 $$
 y_t = W_{hy}h_t
 $$
