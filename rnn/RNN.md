@@ -88,6 +88,8 @@ $$
 y_t = W_{hy}h_t
 $$
 
+每一步都可以计算出$\hat{y}_t$,和真实值$y_t$计算出损失(损失是各个时间步骤的sum,因为已经展开，和前馈网络差不多处理)，进行反向传播BPTT, 优化器优化更新参数。
+
 
 > 1. A single time step of the input is supplied to the network i.e. xt is supplied to the network
 > 2. We then calculate its current state using a combination of the current input and the previous state i.e. we calculate ht
