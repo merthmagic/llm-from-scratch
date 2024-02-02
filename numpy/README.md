@@ -111,3 +111,69 @@ np.linspace(0, 10, num=5)
 ```python
 x = np.ones(2, dtype=np.int64)
 ```
+
+### shape和size
+
+- `ndarray.ndim` 数组的维度数(轴数)
+- `ndarray.size` 数组的元素数
+- `ndarray.shape`数组的形状
+
+example:
+```python
+array_example = np.array([[[0, 1, 2, 3],
+                           [4, 5, 6, 7]],
+
+                          [[0, 1, 2, 3],
+                           [4, 5, 6, 7]],
+
+                          [[0 ,1 ,2, 3],
+                           [4, 5, 6, 7]]])
+```
+数组的`ndim`为3，`size`为24，`shape`为 (3,2,4). 
+
+### reshape
+reshape用的方法为 `arr.reshape()`
+
+example:
+```python
+a = np.arange(6)
+#[0 1 2 3 4 5]
+b = a.reshape(3,2)
+#[[0 1]
+# [2 3]
+# [4 5]]
+```
+
+### add a new axis
+
+用`np.newaxis`
+
+example:
+```python
+a = np.array([1, 2, 3, 4, 5, 6])
+a.shape
+#(6,)
+a2 = a[np.newaxis, :]
+a2.shape
+#(1,6)
+```
+数组可以转为行向量、列向量
+>You can explicitly convert a 1D array with either a row vector or a column vector using np.newaxis. For example, you can convert a 1D array to a row vector by inserting an axis along the first dimension:
+```python
+row_vector = a[np.newaxis, :]
+row_vector.shape
+#(1, 6)
+```
+
+
+> for a column vector, you can insert an axis along the second dimension
+```python
+col_vector = a[:, np.newaxis]
+col_vector.shape
+#(6, 1)
+```
+从代码实践来看，numpy的行向量，列向量表示像matrix，GPT回答：
+>在NumPy中，行向量和列向量实际上也可以被视为特殊的矩阵，因为它们都是二维数组。行向量是一个包含一行元素的二维数组，而列向量是一个包含一列元素的二维数组。因此，它们可以被视为特殊情况的矩阵，只是维度较小而已。在NumPy中，可以使用相同的方式来处理行向量、列向量和一般的矩阵，因为它们都是二维数组。
+
+扩展阅读:
+https://numpy.org/doc/stable/reference/generated/numpy.expand_dims.html#numpy.expand_dims
