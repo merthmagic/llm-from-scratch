@@ -177,3 +177,27 @@ col_vector.shape
 
 扩展阅读:
 https://numpy.org/doc/stable/reference/generated/numpy.expand_dims.html#numpy.expand_dims
+
+### 索引和切片
+定义数据如`data = np.array([1, 2, 3])`
+
+![list index](image-1.png)
+
+这里还有一些操作参照文档即可，暂不记录
+
+### 从已有数据创建array
+
+TODO:这里需要补充一些python的list操作笔记
+
+从已有数组创建
+```python
+a = np.array([1,  2,  3,  4,  5,  6,  7,  8,  9, 10])
+```
+
+从已有数据中选取一个片段来创建
+```python
+arr1 = a[3:8]
+```
+
+还有`vstack`, `hstack`等操作，比较细节的知识点参照文档
+
