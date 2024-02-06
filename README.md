@@ -9,6 +9,8 @@ The goal of this repository is to learn the fundamental knowledge related to GPT
 
 - GPT图解
 - Dive into Deep Learning
+- 深度学习进阶：自然语言处理
+- Deep Learning for NLP
 
 
 ## Contents
@@ -17,3 +19,4 @@ The goal of this repository is to learn the fundamental knowledge related to GPT
 - CBOW
 - NPLM
 - RNN
+- NER
