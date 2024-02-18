@@ -18,8 +18,7 @@ GPT模型使用transformer架构中decoder，作为基础，需要了解NLP的�
 
 ## Contents
 
-- Skip-Gram
-- CBOW
+- Word2Vec
 - NPLM
 - RNN
 - NER
