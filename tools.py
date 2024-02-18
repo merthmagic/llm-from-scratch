@@ -3,17 +3,17 @@ import torch
 from typing import List
 
 
-def one_hot_encoding(word: str, word_to_idx: {str: int}) -> torch.Tensor:
+def one_hot_encoding(word: str, word_to_idx: dict[str,int]) -> torch.Tensor:
     tensor = torch.zeros(len(word_to_idx))
     tensor[word_to_idx[word]] = 1
     return tensor
 
 
-def prepare_words(sentences: [str]) -> List[str]:
+def prepare_words(sentences: List[str]) -> List[str]:
     return list(set((" ".join(sentences)).split()))
 
 
-def prepare_word_to_idx(words: List[str]) -> {str: int}:
+def prepare_word_to_idx(words: List[str]) -> dict[str,int]:
     return {word: idx for idx, word in enumerate(words)}
 
 
