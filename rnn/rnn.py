@@ -42,7 +42,7 @@ def lossFun(inputs, targets, hprev):
   # forward pass
   for t in range(len(inputs)):
     xs[t] = np.zeros((vocab_size,1)) # encode in 1-of-k representation
-    xs[t][inputs[t]] = 1
+    xs[t][inputs[t]] = 1 # 这里应该是在进行one-hot编码
     hs[t] = np.tanh(np.dot(Wxh, xs[t]) + np.dot(Whh, hs[t-1]) + bh) # hidden state
     ys[t] = np.dot(Why, hs[t]) + by # unnormalized log probabilities for next chars
     ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t])) # probabilities for next chars
