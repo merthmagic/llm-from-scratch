@@ -1,11 +1,10 @@
-# Awesome GPT
+# Awesome LLM
 
 > What I cannot create, I do not understand
 
-The goal of this repository is to learn the fundamental knowledge related to GPT.
+The goal of this repository is to learn the fundamental knowledge related to LLM.
 
-这个repo主要记录GPT相关的基础知识学习，也补充一些Deep Learning相关内容.
-GPT模型使用transformer架构中decoder，作为基础，需要了解NLP的基础知识。
+这个repo主要记录LLM相关的基础知识学习，也补充一些Deep Learning相关内容.
 
 ## Reference
 
