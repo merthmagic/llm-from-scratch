@@ -1,5 +1,4 @@
-# Awesome LLM
-
+# LLM from scratch
 > What I cannot create, I do not understand
 
 The goal of this repository is to learn the fundamental knowledge related to LLM.
