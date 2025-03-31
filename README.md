@@ -1,7 +1,6 @@
 # LLM from scratch
-> What I cannot create, I do not understand
 
-The goal of this repository is to learn the fundamental knowledge related to LLM.
+> What I cannot create, I do not understand -- Richard Feynman
 
 这个repo主要记录LLM相关的基础知识学习，也补充一些Deep Learning相关内容.
 
