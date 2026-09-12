@@ -6,6 +6,11 @@ Named Entity Recognition
 
 - 预训练的语言模型 + FC
 
+## 文件
+
+- `notebook/ner.ipynb`：基于 BERT 的 NER 实现
+- `notebook/ner_predict.ipynb`：模型加载与预测
+
 ## BERT实现NER
 
 使用BERT预训练模型实现命名实体识别（NER）的基本步骤如下：

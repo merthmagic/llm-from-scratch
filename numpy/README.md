@@ -94,7 +94,7 @@ import numpy as np
 a = np.array([1,2,3])
 ```
 
-![ array](image.png)
+![ array](assets/image.png)
 
 其他的创建方式
 
@@ -208,7 +208,7 @@ col_vector.shape
 
 定义数据如`data = np.array([1, 2, 3])`
 
-![list index](image-1.png)
+![list index](assets/image-1.png)
 
 这里还有一些操作参照文档即可，暂不记录
 

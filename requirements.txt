@@ -1,0 +1,15 @@
+# 核心
+numpy
+torch
+matplotlib
+scikit-learn
+loguru
+
+# 预训练模型 / 数据集（NER 等）
+transformers
+datasets
+pandas
+seqeval
+
+# 交互环境
+jupyter
