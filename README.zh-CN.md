@@ -4,7 +4,7 @@
 
 > What I cannot create, I do not understand -- Richard Feynman
 
-这个 repo 主要记录 LLM 相关的基础知识学习，也补充一些 Deep Learning 相关内容.
+这个 repo 记录 LLM 相关原理及工程化技巧，同时也包含 DL(Deep Learning) 和 RL(Reinforcement Learning) 内容.
 
 ## Contents
 
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ## Reference
 
-- GPT图解
-- Dive into Deep Learning
-- 深度学习进阶：自然语言处理
+- [GPT图解](https://book.douban.com/subject/36668702/)
+- [Dive into Deep Learning](https://d2l.ai/)
+- [深度学习进阶：自然语言处理](https://book.douban.com/subject/35225413/)
 - Deep Learning for NLP
